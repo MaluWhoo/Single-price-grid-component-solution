@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    /* ### Primary */
+    --Teal-500: hsl(179, 62%, 43%);
+    --Teal-400: hsl(179, 57%, 47%);
+    --Green-400: hsl(71, 73%, 54%);
+
+    /* ### Neutral */
+    --Teal-100: hsl(204, 43%, 93%);
+    --Gray-500: hsl(218, 22%, 67%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Teal-100);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    color: var(--Gray-500);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* line-height: 24px; */
+} 
+
+main {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 2px 10px 18px 2px #0000000d;
+    max-width: 600px;
+    width: 100%;
+}
+
+.description {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.description p {
+    line-height: 25px;
+}
+
+h1 {
+    color: var(--Teal-500);
+    font-size: 24px;
+    /* margin: 1rem; */
+}
+
+h2{
+    color: white;
+    font-size: 16px;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info {
+    display: flex;
+    color: white;
+}
+
+.free-day {
+    color: var(--Green-400);
+    font-weight: 700;
+    /* margin: 1rem; */
+}
+
+.about, .sign-up {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sign-up {
+    background-color: var(--Teal-500);
+    border-radius: 0rem 0rem 0rem 12px;
+}
+
+.about {
+    background-color: var(--Teal-400);
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--Teal-100);
+    border-radius: 0rem 0rem 12px 0rem;
+}
+
+button {
+    background-color: var(--Green-400);
+    color: white;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    margin: 10px;
+    box-shadow: 2px 7px 18px 3px #0000001f;
+}
+
+button:hover {
+    background-color: var(--Teal-100);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Mobile: 375px */
+
+@media (max-width: 375px) {
+    body {
+        padding: 5rem 1rem;
+        min-height: 100vh;
+    }
+    
+    main {
+        /* height: 100vh; */
+        width: 100%;
+        max-width: 100%;
+        /* margin: 2rem; */
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-up {
+        border-radius: 0rem;
+    }
+
+    .about {
+        border-radius: 0rem 0rem 12px 12px
+    }
+}
+
+ @media (max-width: 480px) {
+    body{
+        padding: 5rem 1rem;
+        /* display: block; */
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sign-up {
+        border-radius: 0rem;
+    }
+
+    .about {
+        border-radius: 0rem 0rem 12px 12px
+    }
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 5rem 1rem;
+    }
+
+    main {
+        margin: 1rem;
+    } 
+}
